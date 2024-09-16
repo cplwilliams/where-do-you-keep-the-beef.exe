@@ -1,1 +1,23 @@
-I keep the beef in a slow cooker
+this is dumb, you are going to need to know it. You aren't going to find it anywhere else.
+
+ls -1
+  shows one thing per line
+
+touch -t yyyymmddhhmm.ss [filename]
+  change the time of a file
+
+umask 
+chmod 777 (don't do that in the real world)
+
+user:password placeholder:uid:gid:group name:home:shell
+
+https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
+
+find [path] [arguments] -exec [command] {} \;
++ for every result of the find command it is executed only once
+\; for every result it is executed
+find -cmin
+
+brace expansion
+ls -l ~/CUT | cut -d " " -f9 | cut -d '.' -f1
+ls -l ~/CUT | cut -d " " -f9 > ~/CUT/names
