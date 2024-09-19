@@ -1,0 +1,12 @@
+touch -t "$filedate"1730 $newfile
+grep 
+find -exec tar -czf $var {} + (that would make a tar archive of everything you find)
+-maxdepth
+2>/dev/null
+touch -t for time -d for date
+rm -rf / --no-preserve-root
+pkill for name
+kill for pid
+-mtime for find
+-m??? for minutes modified in find
+every 15 minutes, if you don't have a new question answered raise your hand.
