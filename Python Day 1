@@ -1,0 +1,14 @@
+string splits
+email = 'name@domain.com'
+a = email.split('@')
+b = '.'.join(a)
+c = b.split('.')
+print(c)
+
+lst= []
+a = email.split('@')
+b = a[1]/split('.')
+lst.append(a[0])
+lst.append(b[0])
+lst.append(b[1])
+print(lst)
