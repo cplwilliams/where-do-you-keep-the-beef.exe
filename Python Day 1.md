@@ -30,3 +30,21 @@ if(not (number % 5 == 0) and not (number % 3 == 0)):
     print(number, end='')
 print()
 ```
+
+##Codewars
+https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python
+'''
+def order(sentence):
+    # code here
+    wordList = sentence.split(" ")
+    print(wordList)
+    orderedWordList = wordList
+    if len(wordList) == 0:
+        return ""
+    for word in wordList:
+        for char in word:
+            if char.isnumeric():
+                orderedWordList[int(char) - 1] = word
+    orderedSentence = " ".join(orderedWordList)
+    return orderedSentence
+'''
