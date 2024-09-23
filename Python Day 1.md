@@ -32,8 +32,9 @@ print()
 ```
 
 ##Codewars
+
 https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python
-'''
+```
 def order(sentence):
     # code here
     wordList = sentence.split(" ")
@@ -47,4 +48,4 @@ def order(sentence):
                 orderedWordList[int(char) - 1] = word
     orderedSentence = " ".join(orderedWordList)
     return orderedSentence
-'''
+```
