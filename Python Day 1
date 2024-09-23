@@ -12,3 +12,13 @@ lst.append(a[0])
 lst.append(b[0])
 lst.append(b[1])
 print(lst)
+
+number = int(input("gimme your digit:"))
+
+if(number % 3 == 0):
+    print("fizz", end='')
+if(number % 5 == 0):
+    print("buzz", end='')
+if(not (number % 5 == 0) and not (number % 3 == 0)):
+    print(number, end='')
+print()
