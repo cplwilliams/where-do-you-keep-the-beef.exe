@@ -14,3 +14,26 @@ with open('test.txt', 'w') as fp:
     lines = ['Second line\n', 'Third line\n', 'Fourth line\n', 'Last line\n']
     fp.writelines(lines)
 ```
+this is what I used to complete the last thing on this website:
+
+[[https://runestone.academy/ns/books/published/fopp/Files/ChapterAssessment.html]]
+```
+with open('SP500.txt') as stonk:
+    avgList = []
+    max_interest = 0.0
+    for line in stonk:
+        linelist = line.split(',')
+        if linelist[0] == 'Date':
+            continue
+        datesplit = linelist[0].split('/')
+        if int(datesplit[2]) > 2017 or int(datesplit[2]) < 2016:
+            continue
+        elif int(datesplit[2]) == 2017 and int(datesplit[0]) > 5:
+            continue
+        elif int(datesplit[2]) == 2016 and int(datesplit[0]) < 6:  
+            continue
+        avgList.append(float(linelist[1]))
+        if float(linelist[5]) > max_interest:
+            max_interest = float(linelist[5])
+    mean_SP = sum(avgList) / len(avgList)
+```
